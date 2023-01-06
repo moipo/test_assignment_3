@@ -10,7 +10,7 @@ def is_phone_number(phone_number):
 
 def is_email(email):
     try:
-        if validate_email() is None:
+        if validate_email(email) is None:
             return True
     except:
         return False

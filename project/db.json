@@ -1,0 +1,27 @@
+{
+  "_default":
+  {"1" :
+      {
+          "name": "Form template name",
+          "field_name_1": "email",
+          "field_name_2": "phone"
+      },
+
+    "2" :
+      {
+          "name": "call",
+          "call_date": "date",
+          "phone_number": "phone"
+      },
+
+    "3" :
+      {
+        "name": "Form_with_multiple_fields",
+        "field_name_1": "date",
+        "field_name_2": "text",
+        "field_name_3": "text",
+        "field_name_4": "email"
+      }
+
+  }
+}

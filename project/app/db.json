@@ -9,8 +9,8 @@
 
     {
         "name": "call",
-        "call_date": "date",
-        "phone_number": "phone"
+        "call_date": "22.08.1987",
+        "phone_number": "+123456789"
     },
 
 
@@ -51,4 +51,9 @@
       },
 
   }
+}
+
+{
+    "f_name1" : "value1",
+    "f_name2" : "value2"
 }

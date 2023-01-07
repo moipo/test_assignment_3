@@ -5,6 +5,7 @@ import json
 import pathlib
 import os
 
+
 SERVICE_URL = "http://127.0.0.1:8000/"
 
 POST_SCHEMA = {
@@ -49,16 +50,21 @@ def test_form_api():
     json_input_path = os.path.join(testing_dir,*["src", "input.json"])
 
     with open(json_input_path, "r") as f:
-        json_input = f.read()
-    print(json_input)
+        json_input = json.load(f)
+    # print(json_input)
 
     json_correct_ouput_path = os.path.join(testing_dir,*["src", "correct_output.json"])
 
     with open(json_correct_ouput_path, "r") as f:
-        json_correct_output = f.read()
-    print(json_correct_output)
+        json_correct_output = json.load(f)
+    # print(json_correct_output)
 
-    print(json_correct_output["data"][1])
+    for json_post_request, correct_response in zip(json_input["data"], json_correct_output["data"]):
+        response = requests.post(url = SERVICE_URL, json = json_post_request)
+        print(response.text, "  vs  ", correct_response)
+        print("\n\n\n\n")
+
+    # print(json_correct_output["data"][1])
 
     # response = requests.get(url = SERVICE_URL)
     # received_posts = response.json()

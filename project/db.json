@@ -3,25 +3,35 @@
   {"1" :
       {
           "name": "Form template name",
-          "field_name_1": "email",
-          "field_name_2": "phone"
+          "field_name_1": "some_text",
+          "field_name_2": "more_text"
       },
 
     "2" :
+
       {
           "name": "call",
-          "call_date": "date",
-          "phone_number": "phone"
+          "call_date": "1999.11.11",
+          "phone_number": "+7 927 381 72 36"
       },
 
     "3" :
       {
         "name": "Form_with_multiple_fields",
-        "field_name_1": "date",
-        "field_name_2": "text",
+        "field_name_1": "lorem",
+        "field_name_2": "ipsum",
         "field_name_3": "text",
-        "field_name_4": "email"
-      }
+        "field_name_4": "data"
+      },
+
+    "4" :
+    {
+      "name": "person",
+      "date_of_birth": "22.04.1988",
+      "persons_name": "Ivan",
+      "phone_number": "+7 777 777 77 77",
+      "email": "someemail@gmail.com"
+    }
 
   }
 }

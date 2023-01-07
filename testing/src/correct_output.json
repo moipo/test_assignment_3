@@ -1,25 +1,37 @@
 {
   "data" : [
-      {
-          "name": "Form template name",
-          "field_name_1": "email",
-          "field_name_2": "phone"
-      },
+      "Form template name",
+      "call",
+    {
+      "call_date": "TEXT",
+      "phone_number": "TEXT"
+    },
 
 
-      {
-          "name": "call",
-          "call_date": "date",
-          "phone_number": "phone"
-      },
+      "Form template name",
+      "person",
+    {
+    "date_of_birth": "TEXT",
+    "persons_name": "TEXT",
+    "phone_number": "PHONE_NUMBER",
+    "email": "EMAIL"
+    },
 
+    {
+    "date_of_birth": "TEXT",
+    "persons_name": "TEXT",
+    "phone": "PHONE_NUMBER",
+    "email": "EMAIL"
+    } ,
+    {
+        "fie_1": "TEXT",
+        "field_name_2": "TEXT",
+        "field_name_3": "TEXT",
+        "field_name_4": "TEXT"
+    },
 
-      {
-        "name": "Form_with_multiple_fields",
-        "field_name_1": "date",
-        "field_name_2": "text",
-        "field_name_3": "text",
-        "field_name_4": "email"
-      }
+    {
+        "field": "EMAIL"
+    }
   ]
 }

@@ -7,10 +7,9 @@
           "phone_number": "TEXT"
       },
 
+      "Form template name",
 
-    "Form template name",
-      "person",
-    {
+      {
     "date_of_birth": "TEXT",
     "persons_name": "TEXT",
     "phone_number": "PHONE_NUMBER",
@@ -22,7 +21,7 @@
         "persons_name": "TEXT",
         "phone": "PHONE_NUMBER",
         "email": "EMAIL"
-    } ,
+    },
     {
         "fie_1": "TEXT",
         "field_name_2": "DATE",

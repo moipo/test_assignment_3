@@ -33,7 +33,7 @@ class Response:
         return self
 
     def validate(self, correct_response):
-        assert self.response_json == correct_response, str(self.response_json) +  ErrorMessages.WRONG_JSON.value
+        assert self.response_json == correct_response,  ErrorMessages.WRONG_JSON.value
         return self
 
 
@@ -53,6 +53,7 @@ def test_form_api():
         response = requests.post(url = SERVICE_URL, json = json_post_request)
         r = Response(response)
         r.assert_status_code(200).validate(correct_response)
+        print(response.status_code)
 
 
 if __name__ == "__main__":

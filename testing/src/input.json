@@ -23,12 +23,6 @@
         "field_name_4": "email"
       },
 
-      {
-        "date_of_birth": "22.04.1988",
-        "persons_name": "Ivan",
-        "phone_number": "+7 777 777 77 77",
-        "email": "someemail@gmail.com"
-      },
 
       {
         "date_of_birth": "288",

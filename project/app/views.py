@@ -18,6 +18,8 @@ class FormAPIView(APIView):
                 if template not in templates:
                     templates.append(template)
 
+        templates_that_fit = []
+
         #filter the templates until the appopriate one is found
         data["name"] = "some_name"
         fields_set = set(data.keys())
@@ -30,9 +32,19 @@ class FormAPIView(APIView):
                     else:
                         was_no_break = False
                         break
-                if was_no_break: return Response(template.get("name"))
+                if was_no_break: templates_that_fit.append(template)
+
+        if templates_that_fit:
+            max_length = 0
+            fits_the_most = None
+            for template in templates_that_fit:
+                if len(template) > max_length:
+                    max_length = len(template)
+                    fits_the_most = template
+            return Response(fits_the_most.get("name"))
+
         del data["name"]
-        
+
         #send the field types
         for key,value in data.items():
             data[key] = get_type(value)

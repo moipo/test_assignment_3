@@ -5,7 +5,7 @@ Python version: 3.10
 
 How to launch the project:
 
-  1. run manage.py runserver
+  1. run python3(py) manage.py runserver
   2. go to http://127.0.0.1:8000/
 
 Or use docker:

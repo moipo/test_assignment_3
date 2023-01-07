@@ -1,8 +1,6 @@
 from django.urls import path
-from .views import *
-from .api import FormAPIView
+from .views import FormAPIView
 
 urlpatterns = [
-    # path('', Main.main, name = 'main'),
     path('', FormAPIView.as_view()),
 ]

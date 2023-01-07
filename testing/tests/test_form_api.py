@@ -51,7 +51,6 @@ def test_form_api():
 
     for json_post_request, correct_response in zip(json_input["data"], json_correct_output["data"]):
         response = requests.post(url = SERVICE_URL, json = json_post_request)
-        print(response)
         r = Response(response)
         r.assert_status_code(200).validate(correct_response)
 

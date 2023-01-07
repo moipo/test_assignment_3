@@ -19,6 +19,7 @@ class FormAPIView(APIView):
                     templates.append(template)
 
         #filter the templates until the appopriate one is found
+        data["name"] = "some_name"
         fields_set = set(data.keys())
         for template in templates:
             if set(template.keys()).issubset(fields_set):
@@ -30,7 +31,8 @@ class FormAPIView(APIView):
                         was_no_break = False
                         break
                 if was_no_break: return Response(template.get("name"))
-
+        del data["name"]
+        
         #send the field types
         for key,value in data.items():
             data[key] = get_type(value)

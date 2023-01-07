@@ -2,13 +2,13 @@
   "data" : [
       "Form template name",
       "call",
-    {
-      "call_date": "TEXT",
-      "phone_number": "TEXT"
-    },
+      {
+          "call_date": "TEXT",
+          "phone_number": "TEXT"
+      },
 
 
-      "Form template name",
+    "Form template name",
       "person",
     {
     "date_of_birth": "TEXT",
@@ -18,14 +18,14 @@
     },
 
     {
-    "date_of_birth": "TEXT",
-    "persons_name": "TEXT",
-    "phone": "PHONE_NUMBER",
-    "email": "EMAIL"
+        "date_of_birth": "TEXT",
+        "persons_name": "TEXT",
+        "phone": "PHONE_NUMBER",
+        "email": "EMAIL"
     } ,
     {
         "fie_1": "TEXT",
-        "field_name_2": "TEXT",
+        "field_name_2": "DATE",
         "field_name_3": "TEXT",
         "field_name_4": "TEXT"
     },

@@ -13,7 +13,7 @@
 
       {
           "call_date": "date",
-          "phone_number": "+7  381 72 36"
+          "phone_number": "+7   381 72 36"
       },
 
       {
@@ -46,7 +46,7 @@
 
       {
         "fie_1": "date",
-        "field_name_2": "text",
+        "field_name_2": "12.12.2000",
         "field_name_3": "text",
         "field_name_4": "email"
       },

@@ -18,10 +18,10 @@
     "3" :
       {
         "name": "Form_with_multiple_fields",
-        "field_name_1": "lorem",
-        "field_name_2": "ipsum",
-        "field_name_3": "text",
-        "field_name_4": "data"
+        "some_field_name_1": "lorem",
+        "some_field_name_2": "ipsum",
+        "some_field_name_3": "text",
+        "some_field_name_4": "data"
       },
 
     "4" :

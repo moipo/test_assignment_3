@@ -1,22 +1,26 @@
 {
   "data" : [
       {
+          "name": "Form template name",
           "field_name_1": "some_text",
           "field_name_2": "more_text"
       },
 
 
       {
+          "name": "call",
           "call_date": "1999.11.11",
           "phone_number": "+7 927 381 72 36"
       },
 
       {
+          "name": "call",
           "call_date": "date",
           "phone_number": "+7  381 72 36"
       },
 
       {
+        "name": "Form_with_multiple_fields",
         "field_name_1": "date",
         "field_name_2": "text",
         "field_name_3": "text",
@@ -24,6 +28,7 @@
       },
 
       {
+        "name": "person",
         "date_of_birth": "22.04.1988",
         "persons_name": "Ivan",
         "phone_number": "+7 777 777 77 77",
@@ -31,6 +36,7 @@
       },
 
       {
+        "name": "person",
         "date_of_birth": "288",
         "persons_name": "Ivan",
         "phone_number": "+7 777 777 77 77",
@@ -38,6 +44,7 @@
       },
 
       {
+        "name": "person",
         "date_of_birth": "288",
         "persons_name": "Ivan",
         "phone": "+7 777 777 77 77",
@@ -45,6 +52,7 @@
       },
 
       {
+        "name": "Form_with_multiple_fields",
         "fie_1": "date",
         "field_name_2": "text",
         "field_name_3": "text",
@@ -52,10 +60,12 @@
       },
 
       {
+        "name": "some_name",
         "field": "email@gmail.com"
       },
 
       {
+      "name": "call",
       "call_date": "1999.11.11",
       "phone_number": "+7 927 381 72 36",
       "another_unexpected_field": "some_value"

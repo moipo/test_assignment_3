@@ -14,10 +14,9 @@ class FormAPIView(APIView):
         #get all the templates with at least 1 same field name
         templates = []
         for key in data.keys():
-            if key != "name":
-                for template in db.search(getattr(Form, f'{key}').matches("[aZ]*")):
-                    if template not in templates:
-                        templates.append(template)
+            for template in db.search(getattr(Form, f'{key}').matches("[aZ]*")):
+                if template not in templates:
+                    templates.append(template)
 
         #filter the templates until the appopriate one is found
         fields_set = set(data.keys())
@@ -33,7 +32,6 @@ class FormAPIView(APIView):
                 if was_no_break: return Response(template.get("name"))
 
         #send the field types
-        del data["name"]
         for key,value in data.items():
             data[key] = get_type(value)
         return Response(data)
